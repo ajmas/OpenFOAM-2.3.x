@@ -199,6 +199,10 @@ cleaned=`$foamClean "$LD_LIBRARY_PATH" "$foamOldDirs"` \
 
 #- Clean MANPATH
 cleaned=`$foamClean "$MANPATH" "$foamOldDirs"` && MANPATH="$cleaned"
+if [[ `uname -s` == "Darwin" ]]
+then
+    cleaned=`$foamClean "$DYLD_LIBRARY_PATH" "$foamOldDirs"` && DYLD_LIBRARY_PATH="$cleaned"
+fi
 
 export PATH LD_LIBRARY_PATH MANPATH
 
@@ -237,6 +241,14 @@ then
     export LD_PRELOAD
 fi
 
+if [[ `uname -s` == "Darwin" ]]
+then
+    if [[ `ulimit -n` == "unlimited" || `ulimit -n` < 8192 ]]
+    then
+	# higher limit needed for wmkdeps
+	ulimit -n 8192
+    fi
+fi
 
 # cleanup environment:
 # ~~~~~~~~~~~~~~~~~~~~
