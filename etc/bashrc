@@ -55,7 +55,7 @@ foamInstall=$HOME/$WM_PROJECT
 # overridden from the prefs.sh file or from command-line specification
 #
 #- note the location for later use (eg, in job scripts)
-: ${FOAM_INST_DIR:=$foamInstall}; export FOAM_INST_DIR
+: ${FOAM_INST_DIR:="$foamInstall"}; export FOAM_INST_DIR
 
 #- Compiler location:
 #    foamCompiler= system | ThirdParty (OpenFOAM)
