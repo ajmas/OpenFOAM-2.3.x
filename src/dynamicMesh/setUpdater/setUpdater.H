@@ -37,6 +37,7 @@ SourceFiles
 #ifndef setUpdater_H
 #define setUpdater_H
 
+#include "vector.H"
 #include "polyMeshModifier.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

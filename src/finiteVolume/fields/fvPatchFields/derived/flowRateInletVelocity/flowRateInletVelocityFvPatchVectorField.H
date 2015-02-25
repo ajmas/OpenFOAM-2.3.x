@@ -94,6 +94,7 @@ SourceFiles
 #ifndef flowRateInletVelocityFvPatchVectorField_H
 #define flowRateInletVelocityFvPatchVectorField_H
 
+#include "vector.H"
 #include "fixedValueFvPatchFields.H"
 #include "DataEntry.H"
 

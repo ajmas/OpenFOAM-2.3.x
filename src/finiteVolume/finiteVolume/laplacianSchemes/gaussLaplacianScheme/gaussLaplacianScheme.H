@@ -35,6 +35,7 @@ SourceFiles
 #ifndef gaussLaplacianScheme_H
 #define gaussLaplacianScheme_H
 
+#include "vector.H"
 #include "laplacianScheme.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -35,6 +35,7 @@ SourceFiles
 #ifndef oscillatingLinearMotion_H
 #define oscillatingLinearMotion_H
 
+#include "vector.H"
 #include "solidBodyMotionFunction.H"
 #include "primitiveFields.H"
 #include "point.H"
