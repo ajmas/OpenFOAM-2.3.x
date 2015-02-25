@@ -36,6 +36,7 @@ SourceFiles
 #ifndef phaseProperties_H
 #define phaseProperties_H
 
+#include "vector.H"
 #include "NamedEnum.H"
 #include "Tuple2.H"
 #include "PtrList.H"

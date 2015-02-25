@@ -50,6 +50,7 @@ SourceFiles
 #ifndef primitiveMesh_H
 #define primitiveMesh_H
 
+#include "vector.H"
 #include "DynamicList.H"
 #include "edgeList.H"
 #include "pointField.H"

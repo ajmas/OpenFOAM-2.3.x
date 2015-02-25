@@ -35,6 +35,7 @@ SourceFiles
 #ifndef basicThermo_H
 #define basicThermo_H
 
+#include "vector.H"
 #include "volFields.H"
 #include "typeInfo.H"
 #include "IOdictionary.H"
