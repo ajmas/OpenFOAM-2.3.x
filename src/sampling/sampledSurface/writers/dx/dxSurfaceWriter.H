@@ -35,7 +35,6 @@ SourceFiles
 #ifndef dxSurfaceWriter_H
 #define dxSurfaceWriter_H
 
-#include "vector.H"
 #include "surfaceWriter.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

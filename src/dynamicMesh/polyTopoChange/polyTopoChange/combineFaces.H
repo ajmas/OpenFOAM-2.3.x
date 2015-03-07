@@ -36,7 +36,6 @@ SourceFiles
 #ifndef combineFaces_H
 #define combineFaces_H
 
-#include "vector.H"
 #include "indirectPrimitivePatch.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

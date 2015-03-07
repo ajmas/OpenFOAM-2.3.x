@@ -30,7 +30,6 @@ Description
 
 \*---------------------------------------------------------------------------*/
 
-#include "vector.H"
 #include "fvCFD.H"
 #include "rhoCombustionModel.H"
 #include "turbulenceModel.H"

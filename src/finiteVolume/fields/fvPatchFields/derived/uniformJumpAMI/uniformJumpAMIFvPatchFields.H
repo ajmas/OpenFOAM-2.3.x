@@ -26,7 +26,6 @@ License
 #ifndef uniformJumpAMIFvPatchFields_H
 #define uniformJumpAMIFvPatchFields_H
 
-#include "vector.H"
 #include "uniformJumpAMIFvPatchField.H"
 #include "fieldTypes.H"
 

@@ -35,7 +35,6 @@ SourceFiles
 #ifndef scalarField_H
 #define scalarField_H
 
-#include "vector.H"
 #include "Field.H"
 #include "scalar.H"
 

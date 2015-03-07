@@ -37,7 +37,6 @@ SourceFiles
 #ifndef layerAdditionRemoval_H
 #define layerAdditionRemoval_H
 
-#include "vector.H"
 #include "polyMeshModifier.H"
 #include "primitiveFacePatch.H"
 #include "ZoneIDs.H"

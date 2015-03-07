@@ -41,7 +41,6 @@ SourceFiles
 #ifndef polyMesh_H
 #define polyMesh_H
 
-#include "vector.H"
 #include "objectRegistry.H"
 #include "primitiveMesh.H"
 #include "pointField.H"

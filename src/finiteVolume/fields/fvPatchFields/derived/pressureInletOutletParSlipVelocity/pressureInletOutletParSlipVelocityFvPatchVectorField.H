@@ -70,7 +70,6 @@ SourceFiles
 #ifndef pressureInletOutletParSlipVelocityFvPatchVectorField_H
 #define pressureInletOutletParSlipVelocityFvPatchVectorField_H
 
-#include "vector.H"
 #include "fvPatchFields.H"
 #include "mixedFvPatchFields.H"
 
