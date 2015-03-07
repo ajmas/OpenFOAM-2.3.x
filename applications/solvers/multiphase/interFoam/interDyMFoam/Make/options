@@ -24,6 +24,4 @@ EXE_LIBS = \
     -ltopoChangerFvMesh \
     -lmeshTools \
     -lfvOptions \
-    -lincompressibleTransportModels \
-    -linterfaceProperties \
     -lsampling
