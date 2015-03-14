@@ -36,6 +36,7 @@ SourceFiles
 #ifndef turbulenceFieldsFunctionObject_H
 #define turbulenceFieldsFunctionObject_H
 
+#include "vector.H"
 #include "turbulenceFields.H"
 #include "OutputFilterFunctionObject.H"
 

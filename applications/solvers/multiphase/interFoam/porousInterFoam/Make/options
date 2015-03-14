@@ -20,4 +20,6 @@ EXE_LIBS = \
     -lfiniteVolume \
     -lmeshTools \
     -lfvOptions \
+    -lincompressibleTransportModels \
+    -linterfaceProperties \
     -lsampling

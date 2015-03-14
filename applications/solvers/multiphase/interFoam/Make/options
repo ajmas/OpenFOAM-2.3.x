@@ -17,5 +17,8 @@ EXE_LIBS = \
     -lincompressibleLESModels \
     -lfiniteVolume \
     -lfvOptions \
+    -lincompressibleTransportModels \
+    -linterfaceProperties \
     -lmeshTools \
     -lsampling
+
