@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Provide support for using the right tool on any given platform for reading the
+# documentation. There is no global solution so we need to detect the method for
+# selecting it, according to the current environment
+
+OPEN_CMD=""
+
+if [ "$WM_ARCH_BASE" == "linux" ]
+then
+   if [ `which -s xdg-open` ]
+   then
+       OPEN_CMD=xdg-open
+   elif [ `which -s gnome-open` ]
+   then
+       OPEN_CMD=gnome-open
+   elif [ `which -s kde-open` ]
+   then
+       OPEN_CMD=kde-open
+   elif [ `which -s firefox` ]
+   then
+       # mainly here for compatibility with previous default
+       OPEN_CMD=firefox
+   fi
+elif [ "$WM_ARCH_BASE" == "darwin" ]
+then
+   OPEN_CMD=open   
+fi
+
+if [ -z "${OPEN_CMD}" ]
+then
+   echo "Unable to determine method for opening documentation"
+   exit 1
+fi
+
+"$OPEN_CMD" $*
