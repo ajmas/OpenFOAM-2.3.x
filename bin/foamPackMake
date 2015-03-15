@@ -3,7 +3,7 @@
 # =========                 |
 # \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
 #  \\    /   O peration     |
-#   \\  /    A nd           | Copyright (C) 2011 OpenFOAM Foundation
+#   \\  /    A nd           | Copyright (C) 2011-2015 OpenFOAM Foundation
 #    \\/     M anipulation  |
 #-------------------------------------------------------------------------------
 # License
@@ -150,7 +150,7 @@ esac
 trap 'rm -f $packFile 2>/dev/null' INT
 
 find -H $packDir -depth -name Make -type d -print | \
-    xargs -i find '{}' -depth -name "$archOptions*" -type d -print | \
+    xargs -I {} find '{}' -depth -name "$archOptions*" -type d -print | \
     tar $tarOpt $packFile -T -
 
 if [ $? -eq 0 ]
