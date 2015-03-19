@@ -141,13 +141,16 @@ fi
 if [ $WM_ARCH_BASE=="darwin" ]
 then
     : ${PARAVIEW_APP_DIR:="/Applications/paraview.app"}; export PARAVIEW_APP_DIR
-    if [ -d $PARAVIEW_APP_DIR -a ! -r $ParaView_DIR ]
-    then
-	echo "Using paraview in directory $PARAVIEW_APP_DIR"
-	unset ParaView_VERSION ParaView_MAJOR ParaView_DIR
-	# needs to be an alias because if it is in the path the Python Shell does not work
-	alias paraview=$PARAVIEW_APP_DIR/Contents/MacOS/paraview
-	export PATH=$PARAVIEW_APP_DIR/Contents/bin:$PATH
+    if [ -d "$PARAVIEW_APP_DIR" ]; then
+        echo "Using paraview in directory $PARAVIEW_APP_DIR"
+        paraview () {
+            $PARAVIEW_APP_DIR/Contents/MacOS/paraview "$@"
+        }
+
+        export -f paraview
+    else
+        echo "Please install Paraview into /Applications."
+        return
     fi
 fi
 
