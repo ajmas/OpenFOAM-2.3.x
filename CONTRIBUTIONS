@@ -1,0 +1,34 @@
+OpenFOAM is a project that is the work of multiple people and their effort
+should not be ignored.
+
+General
+-------
+
+Generally, you can look at the Git commit history to see who contributed
+to the code base, with the main repositories being found here:
+
+  https://github.com/OpenFOAM
+
+MacOS X
+-------
+
+For MacOS X specific contributions, the efforts started out in the form
+of patches, that had been posted in the following places:
+ 
+  - http://www.cfd-online.com/Forums/openfoam-installation-windows-mac/114265-patches-compile-openfoam-2-2-mac-os-x.html
+  - http://www.cfd-online.com/Forums/openfoam-installation-windows-mac/95763-1-9-aka-2-1-mac-os-x.html
+  - http://www.cfd-online.com/Forums/openfoam-installation-windows-mac/89752-2-0-x-mac-osx.html
+
+Also, since the main repository only focus on the Linux specific code
+base, the following repository currently covers the MacOS X specific
+changes:
+
+  https://github.com/ajmas/OpenFOAM-2.3.x
+
+Other
+-----
+
+For contributions to forks targeting other platforms, you should consult
+with those code bases.
+
+ 
